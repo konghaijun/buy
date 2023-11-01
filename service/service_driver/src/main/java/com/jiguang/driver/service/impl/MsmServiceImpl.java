@@ -30,7 +30,7 @@ public class MsmServiceImpl implements MsmService {
         //request.setProtocol(ProtocolType.HTTPS);
         request.setMethod(MethodType.POST);
         request.setDomain("dysmsapi.aliyuncs.com");
-        request.setVersion("2017-05-25");
+        request.setVersion("2023-05-25");
         request.setAction("SendSms");
 
         request.putQueryParameter("PhoneNumbers", phone);   //手机号

@@ -148,7 +148,6 @@ Query query=new Query();
     public R findLocationsNearby(@PathVariable  double longitude, @PathVariable double latitude) {
         int maxDistance =20;
         Point point = new Point(longitude, latitude);
-
         NearQuery nearQuery = NearQuery.near(point).maxDistance(maxDistance, Metrics.KILOMETERS);
         GeoResults<SupplementMap> geoResults = mongoTemplate.geoNear(nearQuery, SupplementMap.class);
 
@@ -156,8 +155,6 @@ Query query=new Query();
 
         for (GeoResult<SupplementMap> geoResult : geoResults) {
             SupplementMap location = geoResult.getContent();
-
-
             locations.add(location);
         }
         return R.ok().data("map",locations);

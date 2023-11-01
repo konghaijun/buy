@@ -118,7 +118,6 @@ public class OrderServiceImpl extends ServiceImpl<OrderMapper, Order> implements
     //商家接收离线消息
         @Override
     public List<OrderVo> getUnreadOrders(String SupplementNumber) {
-
         String key = "unread_orders:" + SupplementNumber;
         List<Object> orders = redisTemplate.opsForList().range(key, 0, -1);
         if (orders != null && !orders.isEmpty()) {

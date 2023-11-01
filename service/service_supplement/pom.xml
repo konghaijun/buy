@@ -48,6 +48,44 @@
             <artifactId>joda-time</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.googlecode.soundlibs</groupId>
+            <artifactId>mp3spi</artifactId>
+            <version>1.9.5.4</version>
+        </dependency>
+
+        <!--    &lt;!&ndash; https://mvnrepository.com/artifact/org.daisy.pipeline.modules/audio-encoder-lame &ndash;&gt;
+            <dependency>
+              <groupId>org.daisy.pipeline.modules</groupId>
+              <artifactId>audio-encoder-lame</artifactId>
+              <version>3.0.5</version>
+              <scope>test</scope>
+            </dependency>-->
+
+
+        <!-- https://mvnrepository.com/artifact/org.jflac/jflac-codec -->
+        <dependency>
+            <groupId>org.jflac</groupId>
+            <artifactId>jflac-codec</artifactId>
+            <version>1.5.2</version>
+        </dependency>
+
+        <!--   <dependency>
+             <groupId>it.sauronsoftware</groupId>
+             <artifactId>jave</artifactId>
+             <version>1.0.2</version>
+           </dependency>-->
+
+
+
+
+
+        <!-- https://mvnrepository.com/artifact/io.github.pityka/lame-bgzip-index -->
+        <dependency>
+            <groupId>io.github.pityka</groupId>
+            <artifactId>lame-bgzip-index_2.13</artifactId>
+            <version>0.0.4</version>
+        </dependency>
 
 
     </dependencies>

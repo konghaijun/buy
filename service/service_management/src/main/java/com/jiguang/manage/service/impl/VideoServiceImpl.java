@@ -137,6 +137,7 @@ public class VideoServiceImpl extends ServiceImpl<VideoMapper, Video> implements
 
 
             UpdateVideoInfoRequest request1 = new UpdateVideoInfoRequest();
+
             request1.setVideoId(videoId);
             request1.setTitle(title);
             request1.setDescription(description);

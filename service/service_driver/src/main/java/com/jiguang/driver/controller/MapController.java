@@ -22,8 +22,6 @@ public class MapController {
 
     @PostMapping("add")
     public R add(@RequestBody DriverMap driver)  {
-
-
         driver.setGmtCreate(new Date());
       mongoTemplate.insert(driver);
         return R.ok();
